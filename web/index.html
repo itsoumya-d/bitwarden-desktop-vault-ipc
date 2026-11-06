@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vault IPC Console</title>
+<style>
+:root{--bw-blue:#175ddc;--bw-blue-light:#487fe2;--ink:#0a171f;--muted:#545e66;--surface:#f4f6f8;--white:#fff;--radius:8px}
+*{box-sizing:border-box}body{margin:0;background:var(--surface);color:var(--ink);font-family:"Inter Variable",Inter,system-ui,sans-serif;line-height:1.5}
+header{background:var(--bw-blue);color:#fff;padding:28px 32px}header h1{margin:0;font-size:24px;letter-spacing:-.03em}header p{margin:6px 0 0;opacity:.85}
+main{max-width:920px;margin:0 auto;padding:28px}.card{background:#fff;border:1px solid #d8dee5;border-radius:var(--radius);padding:20px;margin-bottom:16px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.status{display:inline-block;background:#e8f0ff;color:var(--bw-blue);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#eef2f6;padding:2px 6px;border-radius:4px}
+</style></head><body><header><h1>Vault IPC Console</h1><p>Secure desktop boundary · zero-knowledge vault · audit-first</p></header>
+<main><section class="card"><div class="eyebrow">Boundary status</div><p><span class="status">allowlist active</span> trusted origin <code>app://bitwarden</code>, top frame only, one-time request IDs.</p></section>
+<section class="card"><div class="eyebrow">Protected operations</div><div class="grid"><div><b>vault:unlock</b><br>PBKDF2-SHA256 → HKDF</div><div><b>vault:list</b><br>decrypt only on demand</div><div><b>autotype:run</b><br>validated field sequence</div><div><b>ssh:sign</b><br>challenge signing</div></div></section>
+<section class="card"><div class="eyebrow">Design tokens</div><p>#175DDC · #487FE2 · #0A171F · #545E66 · radius 8px · Inter Variable.</p></section></main></body></html>
